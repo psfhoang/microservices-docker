@@ -1,0 +1,9 @@
+.idea/
+.mvn/
+auth-server/target/
+config-server/target/
+eureka-server/target/
+microservice1/target/
+midcroservice2/target/
+oauth-client-test/target/
+spring-social/target/

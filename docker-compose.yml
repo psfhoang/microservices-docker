@@ -1,0 +1,45 @@
+version: '3'
+services:
+  config-server:
+    container_name: config-server
+    build: ./config-server
+    ports:
+      - "8888:8888"
+    networks:
+      - default-network
+
+  eureka-server:
+    container_name: eureka-server
+    build: ./eureka-server
+    ports:
+      - "8761:8761"
+    depends_on:
+      - config-server
+    entrypoint: /bin/sh
+    command: >
+      -c "
+      while ! (nc -z config-server 8888); do sleep 5; echo 'Waiting for config-server services to start-up...'; done;
+      java -Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=8787,suspend=n -jar -Dspring.profiles.active=docker /app.jar
+      "
+    networks:
+      - default-network
+
+  auth-server:
+    container_name: auth-server
+    build: ./auth-server
+    ports:
+      - "8082:8082"
+    depends_on:
+      - config-server
+    entrypoint: /bin/sh
+    command: >
+      -c "
+      while ! (nc -z config-server 8888); do sleep 5; echo 'Waiting for config-server services to start-up...'; done;
+      java -Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=8787,suspend=n -jar -Dspring.profiles.active=docker /app.jar
+      "
+    networks:
+      - default-network
+
+networks:
+  default-network:
+    driver: bridge
