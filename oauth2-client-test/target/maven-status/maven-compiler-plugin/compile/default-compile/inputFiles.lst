@@ -1,6 +1,0 @@
-/home/hoang/Desktop/microservices/microservice-docker/oauth2-client-test/src/main/java/com/example/oauth2client/service/impl/OAuth2ServiceImpl.java
-/home/hoang/Desktop/microservices/microservice-docker/oauth2-client-test/src/main/java/com/example/oauth2client/model/AccessToken.java
-/home/hoang/Desktop/microservices/microservice-docker/oauth2-client-test/src/main/java/com/example/oauth2client/config/WebSecurityConfig.java
-/home/hoang/Desktop/microservices/microservice-docker/oauth2-client-test/src/main/java/com/example/oauth2client/controller/OAuth2Controller.java
-/home/hoang/Desktop/microservices/microservice-docker/oauth2-client-test/src/main/java/com/example/oauth2client/service/OAuth2Service.java
-/home/hoang/Desktop/microservices/microservice-docker/oauth2-client-test/src/main/java/com/example/oauth2client/Oauth2ClientApplication.java

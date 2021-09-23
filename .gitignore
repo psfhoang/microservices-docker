@@ -5,5 +5,5 @@ config-server/target/*
 eureka-server/target/*
 microservice1/target/*
 microservice2/target/*
-oauth-client-test/target/*
+oauth2-client-test/target/*
 spring-social/target/*

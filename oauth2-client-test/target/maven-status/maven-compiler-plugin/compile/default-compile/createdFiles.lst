@@ -1,6 +1,0 @@
-com/example/oauth2client/service/OAuth2Service.class
-com/example/oauth2client/model/AccessToken.class
-com/example/oauth2client/config/WebSecurityConfig.class
-com/example/oauth2client/Oauth2ClientApplication.class
-com/example/oauth2client/controller/OAuth2Controller.class
-com/example/oauth2client/service/impl/OAuth2ServiceImpl.class

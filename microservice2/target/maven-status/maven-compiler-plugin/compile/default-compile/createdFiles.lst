@@ -1,7 +1,0 @@
-com/amran/patient/management/security/ResourceServerConfig.class
-META-INF/spring-configuration-metadata.json
-com/amran/patient/management/security/WebSecurityConfig.class
-com/amran/patient/management/security/AccessTokenMapper.class
-com/amran/patient/management/security/JwtConverter.class
-com/amran/patient/management/controller/PatientRegistrationController.class
-com/amran/patient/management/PatientManagementServiceApplication.class
